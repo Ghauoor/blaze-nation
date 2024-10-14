@@ -10,8 +10,32 @@ import dustBin from "../assets/images/dustbin.jpg";
 import price from "../assets/images/price.jpg";
 import weight from "../assets/images/weight.jpg";
 import nature from "../assets/images/nature.jpg";
+import TestimonialSection from "../components/TestimonialSection";
 
 function Home() {
+  const testimonials = [
+    {
+      clientName: "John Doe",
+      clientTitle: "CEO, Company ABC",
+      clientFeedback:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      clientAvatar: "https://via.placeholder.com/150",
+    },
+    {
+      clientName: "Jane Smith",
+      clientTitle: "Manager, Company XYZ",
+      clientFeedback:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      clientAvatar: "https://via.placeholder.com/150",
+    },
+    {
+      clientName: "Michael Johnson",
+      clientTitle: "Director, Company PQR",
+      clientFeedback:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      clientAvatar: "https://via.placeholder.com/150",
+    },
+  ];
   return (
     <>
       <Section
@@ -82,7 +106,7 @@ function Home() {
       </section>
 
       <section className="mb-5 flex flex-wrap justify-center lg:justify-evenly">
-        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-64">
+        <div className="w-full sm:w-1/2 lg:w-64">
           <Card
             imageUrl={nature}
             title="Save Environment"
@@ -115,6 +139,7 @@ function Home() {
           />
         </div>
       </section>
+      <TestimonialSection testimonials={testimonials} />
     </>
   );
 }
