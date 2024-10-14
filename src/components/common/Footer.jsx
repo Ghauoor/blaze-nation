@@ -296,9 +296,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
         <p className="text-xs text-gray-100">
-          &copy; 2022. Company Name. All rights reserved.
+          &copy; 2024. Blaze Nation. All rights reserved.
         </p>
       </div>
     </footer>
